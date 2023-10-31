@@ -1,1 +1,22 @@
+Q0: https://github.com/Eoljjang/404-lab7-flask
+
+Q1: Flask and Django differ in how much "out of the box" functionality they have. For example, Django already has an admin page, databse communication support. While in Flask, you have to implement it by yourself. This could be a good thing depending on what you're after, for example Flask would be a lot more lightweight.
+
+Q2: REST stands for "Representational State Transfer", it's like a standard way for API's that make them universal to each other. An example of this would be the HTTP methods GET, POST, etc. "Restful API" would mean that the API conforms to the REST standards.
+
+Q3: Create, Read, Update, Delete. They explain the essential operations needed for managing data. The equivalent HTTP methods would be: Post, get, put, delete. 
+
+Q4:
+1xx: Informational codes
+2xx: Success codes
+3xx: Redirection codes
+4xx: HTTP client error codes
+5xx: HTTP server error codes
+
+Q5: An XSS attack is an injection attack where the attacker can inject client-side scripts into a web application, which can then be seen / run by other users. A way that a site can be vulnerable is if they don't validate / verify user-input fields or commands. For example, a input field should screen for unwanted scripts.
+
+Q6: Cross-origin Resource Sharing. Can allow / disallow other origins to load resources into the web application. You may need to implement CORS protection when some sort of authentication is required. In other words, only certain users are allowed to load cross-origin resources. For an example, you may want to limit who has access to resource loading if users from a different platform are accessing your REST API.
+
+
+
 
