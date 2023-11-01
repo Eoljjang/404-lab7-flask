@@ -1,5 +1,15 @@
 #!/usr/bin/env python3
 # Note that for Mac, you have to use port 8000 (cuz OS takes 5000 and 7000 already) => See last line in code.
+# Note: if you get "content-type" isn't JSON error, you just have to specify it as a header in your curl command.
+
+# Post: curl -v -X PUT localhost:8000/todos/3 -H "Content-Type: application/json" -d "task=profit more"
+# Put: curl -v -X PUT -H "Content-Type: application/json" -d '{"task": "profit more"}' localhost:8000/todos/3
+
+# HTTPIE COMMANDS:
+# http :8000/todos == curl localhost:8000/todos
+# http HEAD :8000/todos == Gives you the head of the request.
+# http POST :8000/todos task="Try HTTPIE" => Posts a task (defaults to JSON format already for you) with the content "Try HTTPIE".
+ 
 
 from flask import Flask
 from flask_restful import reqparse, abort, Api, Resource
