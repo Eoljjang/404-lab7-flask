@@ -1,3 +1,4 @@
+## Some Notes
 Hi there! Please note that for some reason when I run the POST and PUT curl commands I get a ""Did not attempt to load JSON data because the request Content-Type was not 'application/json'." error.
 
 To get around this problem, I have to change the curl command to specify that it's a JSON-type, and submit the new input in JSON format. As such =>
